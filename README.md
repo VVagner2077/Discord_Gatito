@@ -2,6 +2,7 @@
 
 Gatito é um bot para Discord que traz um pouco de diversão com imagens e GIFs de gatos, além de um som de miau! Comandos simples permitem que os usuários recebam uma imagem aleatória de gato, um GIF de gato ou até mesmo um arquivo de áudio com um som de miau.
 
+
 ![Gatito](gatito.png)
 
 ## Comandos
@@ -19,7 +20,7 @@ Gatito é um bot para Discord que traz um pouco de diversão com imagens e GIFs 
    cd seu_repositorio
    ```
 
-2. **Crie um ambiente virtual e ative-o:**
+2. **(Opcional) Crie um ambiente virtual e ative-o:**
 
    ```bash
    python -m venv venv
@@ -56,5 +57,3 @@ pip install discord.py requests
 ## Contribuição
 
 Este projeto é apenas para diversão e aprendizado. Sinta-se à vontade para explorar e experimentar com o código!
-
-
