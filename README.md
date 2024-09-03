@@ -1,15 +1,8 @@
 # Gatito
 
-Gatito é um bot para Discord que traz um pouco de diversão com imagens e GIFs de gatos, além de um som de miau! Comandos simples permitem que os usuários recebam uma imagem aleatória de gato, um GIF de gato ou até mesmo um arquivo de áudio com um som de miau.
-
+Gatito é um bot para Discord que envia imagens e GIFs de gatos, além de um arquivo de áudio com um som de miau!
 
 ![Gatito](gatito.png)
-
-## Comandos
-
-- `!foto` - Envia uma imagem aleatória de um gato.
-- `!gif` - Envia um GIF ou vídeo de um gato.
-- `!miau` - Envia um arquivo de áudio com um som de miau.
 
 ## Instalação
 
@@ -20,24 +13,30 @@ Gatito é um bot para Discord que traz um pouco de diversão com imagens e GIFs 
    cd seu_repositorio
    ```
 
-2. **(Opcional) Crie um ambiente virtual e ative-o:**
+2. **Instale as dependências:**
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+   pip install discord.py requests
    ```
 
-3. **Instale as dependências:**
+3. **Configure o bot:**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+   1. **Crie uma aplicação no Discord Developer Portal:**
+   
+      - Acesse [Discord Developer Portal](https://discord.com/developers/applications).
+      - Clique em "New Application" e dê um nome à sua aplicação.
+      - No menu à esquerda, selecione "Bot" e clique em "Add Bot". Confirme clicando em "Yes, do it!".
 
-4. **Configure o bot:**
+   2. **Obtenha o token do bot:**
 
-   Substitua `'Seu_token'` no arquivo `bot.py` com o token do seu bot do Discord.
+      - Na página do bot, copie o token clicando em "Copy" ao lado do campo "TOKEN". 
+      - **Importante:** Mantenha este token em segredo.
 
-5. **Execute o bot:**
+   3. **Configure o bot:**
+
+      - Substitua `'Seu_token'` no arquivo `bot.py` com o token copiado do Discord Developer Portal.
+
+4. **Execute o bot:**
 
    ```bash
    python bot.py
@@ -47,12 +46,6 @@ Gatito é um bot para Discord que traz um pouco de diversão com imagens e GIFs 
 
 - `discord.py` - Biblioteca para interagir com a API do Discord.
 - `requests` - Biblioteca para fazer requisições HTTP.
-
-Você pode instalar essas dependências com o seguinte comando:
-
-```bash
-pip install discord.py requests
-```
 
 ## Contribuição
 
